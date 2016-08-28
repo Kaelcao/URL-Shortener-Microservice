@@ -22,7 +22,7 @@ function isURL(url) {
 
 app.get('/',(req,res) => {
     res.render('index',{url:req.protocol + '://' + req.get('host')});
-})
+});
 
 app.get('/:urlId', (req,res) => {
     mongoClient.connect(MONGOLAB_URI, (err,db) => {
