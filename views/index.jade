@@ -1,0 +1,17 @@
+h1 FreeCodeCamp API Basejump: URL Shortener Microservice
+h2 User stories:
+ul
+    li I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+    li When I visit that shortened URL, it will redirect me to my original link.
+
+h2 Example creation usage:
+ul
+    li #{url}/new/https://www.google.com
+    li #{url}/new/http://foo.com:80
+h2  Example creation output
+ul
+    li { "original_url":"http://foo.com:80", "short_url":"https://little-url.herokuapp.com/8170" }
+h2 Usage:
+p #{url}/6
+Will redirect to:
+p https://www.google.com/
